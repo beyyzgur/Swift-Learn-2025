@@ -21,14 +21,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g2Q-CQ-OeY">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g2Q-CQ-OeY">
                                 <rect key="frame" x="24" y="193" width="345" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R32-cy-Irg">
-                                <rect key="frame" x="16" y="342" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R32-cy-Irg">
+                                <rect key="frame" x="16" y="334" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHI-SI-IOd">
+                                <rect key="frame" x="16" y="371" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,24 +45,39 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="save"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SmU-TB-t3e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R32-cy-Irg" secondAttribute="trailing" constant="16" id="99e-Mb-ax9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHI-SI-IOd" secondAttribute="trailing" constant="16" id="CVe-jE-aEm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g2Q-CQ-OeY" secondAttribute="trailing" constant="24" id="GhU-dM-QHW"/>
+                            <constraint firstItem="IHI-SI-IOd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TD3-8m-9d0"/>
+                            <constraint firstItem="R32-cy-Irg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VXi-iA-Fr6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="v7z-gt-dBL" secondAttribute="trailing" constant="32" id="Yff-Vm-SlA"/>
                             <constraint firstItem="v7z-gt-dBL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Ytj-1f-TO6"/>
+                            <constraint firstItem="IHI-SI-IOd" firstAttribute="top" secondItem="R32-cy-Irg" secondAttribute="bottom" constant="16" id="Z3i-Nc-HkE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Edz-gJ-Gag" secondAttribute="trailing" constant="24" id="daZ-be-bIy"/>
                             <constraint firstItem="Edz-gJ-Gag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="dt6-h8-eDx"/>
                             <constraint firstItem="v7z-gt-dBL" firstAttribute="top" secondItem="g2Q-CQ-OeY" secondAttribute="bottom" constant="40" id="l6M-b3-YOr"/>
                             <constraint firstItem="Edz-gJ-Gag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="laA-nb-bm4"/>
                             <constraint firstItem="v7z-gt-dBL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="loB-uZ-13o"/>
                             <constraint firstItem="g2Q-CQ-OeY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="n5y-VI-nSt"/>
+                            <constraint firstItem="R32-cy-Irg" firstAttribute="top" secondItem="v7z-gt-dBL" secondAttribute="bottom" constant="32" id="yWp-zd-MCi"/>
                             <constraint firstItem="g2Q-CQ-OeY" firstAttribute="top" secondItem="Edz-gJ-Gag" secondAttribute="bottom" constant="24" id="zeo-Pf-oBa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Vs-Jz-qQv"/>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="IHI-SI-IOd" id="Ygi-TW-1KS"/>
+                        <outlet property="birthdayTextField" destination="g2Q-CQ-OeY" id="JoT-w9-Hzg"/>
+                        <outlet property="nameLabel" destination="R32-cy-Irg" id="X4O-8i-B7L"/>
+                        <outlet property="nameTextField" destination="Edz-gJ-Gag" id="NZq-yl-jGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
