@@ -1,0 +1,29 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  },
+  "stickers" : [
+    {
+      "filename" : "winx_musa.sticker"
+    },
+    {
+      "filename" : "winx_flora.sticker"
+    },
+    {
+      "filename" : "winx_aisha.sticker"
+    },
+    {
+      "filename" : "winx_tecna.sticker"
+    },
+    {
+      "filename" : "winx_stella.sticker"
+    },
+    {
+      "filename" : "winx_bloom.sticker"
+    }
+  ]
+}
