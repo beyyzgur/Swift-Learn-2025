@@ -37,3 +37,6 @@ struct Person {
 var person = Person(fullName: "beyza", age: -1)
 person.age = 0
 person.fullName = "beyza gur"
+
+
+// Computed property ile değer değiştirilebilir, Property observers ise değeri değiştiremez, sadece değer değişikliklerini izlemek için kullanılır.
